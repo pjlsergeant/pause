@@ -139,7 +139,7 @@ subtest "distname/pkgname permission mismatch" => sub {
           sub {
             like(
               $_[0]->{email}->as_string,
-              qr/XFR,\s+which\s+you\s+do\s+not\s+have/,
+              qr/uploaded\s+by\s+users\s+with\s+permission\s+for\s+the\s+package\s+XFR/,
               "email looks right",
             );
           },
